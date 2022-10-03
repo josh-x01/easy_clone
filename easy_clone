@@ -1,0 +1,10 @@
+#!/bin/bash
+
+printf "Username: "
+read username
+printf "Token: "
+read token
+printf "Repository name: "
+read reponame
+
+git clone https://$token@github.com/$username/$reponame.git
