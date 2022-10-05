@@ -2,9 +2,16 @@
 
 printf "Username: "
 read username
-printf "Token: "
-read token
+
 printf "Repository name: "
 read reponame
 
+if [[ $# == 1 ]]
+then
+	git clone https://$1@github.com/$username/$reponame.git
+	exit 0
+fi
+
+printf "Token: "
+read token
 git clone https://$token@github.com/$username/$reponame.git
