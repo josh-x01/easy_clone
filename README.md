@@ -4,7 +4,7 @@ cd easy_clone/ <br>
 chmod u+x easy_clone <br>
 ./easy_clone <br>
 
-ola
+
 Username: username <br>
 Token: your_git_token | if you aren't owner, put random word <br>
 Repository name: repo_name <br>
